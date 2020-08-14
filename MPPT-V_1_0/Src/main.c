@@ -26,6 +26,8 @@
 #include "tim.h"
 #include "gpio.h"
 
+#include "utilities.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -112,8 +114,6 @@ int main(void)
 
   HAL_ADC_Start_DMA(&hadc1, value, 4);
 
-  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);
-
 
   /* USER CODE END 2 */
 
@@ -122,7 +122,7 @@ int main(void)
 
   while (1)
   {
-	  cansend_SYNC();
+	  /*cansend_SYNC();
 	  ADC_Array = value[0];
 	  ADC_Battery = value[1];
 	  ADC_VArray = value[2];
@@ -133,12 +133,15 @@ int main(void)
 		  DutyCycle = 500;
 	  TIM3->CCR4 = DutyCycle;
 
-	  HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_4);
 	  HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
+	  setGreenState();
+	  HAL_Delay(1000);
+	  resetGreenState();
+	  HAL_Delay(1000);
+	  setGreenState();
 
   }
   /* USER CODE END 3 */

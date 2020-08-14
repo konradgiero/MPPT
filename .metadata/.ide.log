@@ -10969,3 +10969,318 @@
 
 
 2020-08-14 10:19:29,807 [INFO] Activator:177 - !SESSION log4j initialized
+2020-08-14 11:02:54,014 [INFO] Activator:176 - 
+
+
+2020-08-14 11:02:54,018 [INFO] Activator:177 - !SESSION log4j initialized
+2020-08-14 11:23:53,105 [INFO] ApplicationProperties:181 - Using Application install path: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903
+2020-08-14 11:23:53,118 [INFO] DbMcusXml:68 - Set database path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//mcu/
+2020-08-14 11:23:53,123 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/boardmanager/
+2020-08-14 11:23:53,123 [INFO] DbMcus:264 - Set plugin images path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/mcufinder/images/
+2020-08-14 11:23:53,124 [INFO] DbBoards:232 - Set plugin images path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/mcufinder/images/
+2020-08-14 11:23:53,127 [INFO] APIGFXSelector:72 - Set database path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/mcufinder/mcu/
+2020-08-14 11:23:53,132 [INFO] DbMcusAds:72 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,134 [INFO] DbMcusDocs:92 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,137 [INFO] DbMcusJson:59 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,138 [INFO] DbBoardsDocs:84 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,139 [INFO] DbBoardsJson:51 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,226 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-08-14 11:23:53,526 [INFO] RulesReader:52 - Compatibility file has been processed (156 Rules)
+2020-08-14 11:23:53,617 [INFO] MicroXplorer:521 - Detected Java Version = 1.8.0_202
+2020-08-14 11:23:53,617 [INFO] DbMcusXml:68 - Set database path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//mcu/
+2020-08-14 11:23:53,617 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/boardmanager/
+2020-08-14 11:23:53,619 [INFO] DbMcus:264 - Set plugin images path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/mcufinder/images/
+2020-08-14 11:23:53,620 [INFO] DbBoards:232 - Set plugin images path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/mcufinder/images/
+2020-08-14 11:23:53,620 [INFO] APIGFXSelector:72 - Set database path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/mcufinder/mcu/
+2020-08-14 11:23:53,620 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,620 [INFO] DbMcusAds:72 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,620 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,621 [INFO] DbMcusDocs:92 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,621 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,621 [INFO] DbMcusJson:59 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,621 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,622 [INFO] DbBoardsDocs:84 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,622 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,622 [INFO] DbBoardsJson:51 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,622 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,623 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,624 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-08-14 11:23:53,703 [INFO] MainPanel:211 - HeapMemory: 348127232
+2020-08-14 11:23:53,899 [INFO] DbMcusXml:68 - Set database path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//mcu/
+2020-08-14 11:23:53,903 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/boardmanager/
+2020-08-14 11:23:53,906 [INFO] DbMcus:264 - Set plugin images path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/mcufinder/images/
+2020-08-14 11:23:53,909 [INFO] DbBoards:232 - Set plugin images path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/mcufinder/images/
+2020-08-14 11:23:53,913 [INFO] APIGFXSelector:72 - Set database path to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//plugins/mcufinder/mcu/
+2020-08-14 11:23:53,918 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,921 [INFO] DbMcusAds:72 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,924 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,926 [INFO] DbMcusDocs:92 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,929 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,931 [INFO] DbMcusJson:59 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,933 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,936 [INFO] DbBoardsDocs:84 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,937 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,939 [INFO] DbBoardsJson:51 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/
+2020-08-14 11:23:53,941 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,944 [WARN] DbFile:31 - Overriding database path with different value: /home/kerraiosc/.stmcufinder/plugins/mcufinder/ => /home/kerraiosc/.stmcufinder/plugins/mcufinder
+2020-08-14 11:23:53,948 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/kerraiosc/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-08-14 11:23:54,086 [INFO] ApplicationProperties:181 - Using Application install path: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903
+2020-08-14 11:23:54,103 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2020-08-14 11:23:54,116 [INFO] PluginManage:292 - Check plugin analytics
+2020-08-14 11:23:54,166 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-08-14 11:23:54,171 [INFO] PluginManage:292 - Check plugin clock
+2020-08-14 11:23:54,259 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-08-14 11:23:54,263 [INFO] PluginManage:292 - Check plugin ddr
+2020-08-14 11:23:54,285 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-08-14 11:23:54,289 [INFO] PluginManage:292 - Check plugin filemanager
+2020-08-14 11:23:54,479 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-08-14 11:23:54,480 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-08-14 11:23:54,485 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-08-14 11:23:54,485 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-08-14 11:23:54,493 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-08-14 11:23:54,494 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-08-14 11:23:54,513 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-08-14 11:23:54,513 [INFO] PluginManage:292 - Check plugin power
+2020-08-14 11:23:54,520 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-08-14 11:23:54,520 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-08-14 11:23:54,542 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-08-14 11:23:54,543 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-08-14 11:23:54,597 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (/home/kerraiosc/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 35 ms. number of Sw pack : 11
+2020-08-14 11:23:54,615 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-08-14 11:23:54,615 [INFO] PluginManage:292 - Check plugin tools
+2020-08-14 11:23:54,619 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-08-14 11:23:54,620 [INFO] PluginManage:292 - Check plugin updater
+2020-08-14 11:23:54,655 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-08-14 11:23:54,656 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2020-08-14 11:23:54,935 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-08-14 11:23:55,519 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,524 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-08-14 11:23:55,538 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,542 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-08-14 11:23:55,602 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,636 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-08-14 11:23:55,690 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,693 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-08-14 11:23:55,721 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,725 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-08-14 11:23:55,738 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,742 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-08-14 11:23:55,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,758 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-08-14 11:23:55,802 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,806 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-08-14 11:23:55,821 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,824 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-08-14 11:23:55,910 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,917 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-08-14 11:23:55,921 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,922 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-08-14 11:23:55,923 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,924 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-08-14 11:23:55,927 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,928 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-08-14 11:23:55,930 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,931 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-08-14 11:23:55,933 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,934 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-08-14 11:23:55,938 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,938 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-08-14 11:23:55,941 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,941 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-08-14 11:23:55,942 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,943 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-08-14 11:23:55,946 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,946 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-08-14 11:23:55,949 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,949 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-08-14 11:23:55,952 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,952 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-08-14 11:23:55,956 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,957 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-08-14 11:23:55,958 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,958 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-08-14 11:23:55,962 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,963 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-08-14 11:23:55,965 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,966 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-08-14 11:23:55,967 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,968 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-08-14 11:23:55,970 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,970 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-08-14 11:23:55,973 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,974 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-08-14 11:23:55,976 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,976 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-08-14 11:23:55,979 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,980 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-08-14 11:23:55,983 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,984 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-08-14 11:23:55,987 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,987 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-08-14 11:23:55,989 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,990 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2020-08-14 11:23:55,995 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:55,996 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-08-14 11:23:56,001 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:56,001 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-08-14 11:23:56,006 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:56,006 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-08-14 11:23:56,008 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:23:56,009 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-08-14 11:23:56,144 [INFO] BoardConnectionPanel:217 - [DDR PANEL] osNameString: Linux
+2020-08-14 11:23:56,506 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-08-14 11:23:57,036 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-08-14 11:23:57,052 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-08-14 11:23:57,054 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-08-14 11:23:57,059 [INFO] MainDdrPanel:82 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.0.0.201904021149/tools/bin
+2020-08-14 11:23:57,067 [INFO] Updater:860 - Updater Version found : 5.3.0
+2020-08-14 11:23:57,085 [INFO] ApplicationProperties:181 - Using Application install path: /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903
+2020-08-14 11:23:57,162 [INFO] MainUpdater:2040 - connection check result : 10
+2020-08-14 11:23:57,171 [INFO] MainUpdater:229 - Updater Check For Update Now.
+2020-08-14 11:23:57,171 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2020-08-14 11:23:57,216 [INFO] CheckServerUpdateThread:121 - End of CheckServer Thread
+2020-08-14 11:23:57,373 [INFO] MainUpdater:2040 - connection check result : 10
+2020-08-14 11:23:57,375 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2020-08-14 11:23:57,591 [INFO] MicroXplorer:371 - Change Database Path : 
+2020-08-14 11:23:57,592 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2020-08-14 11:23:57,598 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-08-14 11:23:57,599 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 179569816 Bytes (348127232)
+2020-08-14 11:23:57,600 [INFO] MicroXplorer:371 - Change Database Path : 
+2020-08-14 11:23:57,600 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2020-08-14 11:23:57,601 [INFO] OpenFileManager:269 - Change cursor
+2020-08-14 11:23:57,885 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (/home/kerraiosc/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-08-14 11:23:58,003 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (/home/kerraiosc/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 6 ms. number of Sw pack : 11
+2020-08-14 11:23:58,003 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (/home/kerraiosc/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-08-14 11:23:58,015 [INFO] IntegrityCheckThread:97 - End integrity checks thread
+2020-08-14 11:24:04,915 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (0#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,923 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (0#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,923 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (0#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,933 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (1#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,933 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (1#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,934 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (1#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,934 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (2#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,934 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (2#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,935 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (2#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,935 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (3#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,935 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (3#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,935 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (3#ChannelRegularConversion) currently not set
+2020-08-14 11:24:04,936 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2020-08-14 11:24:04,937 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (ADC1) currently not set
+2020-08-14 11:24:04,937 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2020-08-14 11:24:04,937 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2020-08-14 11:24:04,937 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2020-08-14 11:24:04,938 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2020-08-14 11:24:04,939 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2020-08-14 11:24:04,939 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2020-08-14 11:24:04,940 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2020-08-14 11:24:04,940 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (ADC1) currently not set
+2020-08-14 11:24:04,940 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (48MHZClocksFreq_Value) has invalid value (84000000)
+2020-08-14 11:24:04,942 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (12500000)
+2020-08-14 11:24:05,536 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 200946816 Bytes (348127232)
+2020-08-14 11:24:05,554 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (/home/kerraiosc/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 5 ms. number of Sw pack : 11
+2020-08-14 11:24:05,781 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.1.2
+2020-08-14 11:24:05,782 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.2.0
+2020-08-14 11:24:05,782 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.2
+2020-08-14 11:24:05,782 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.1.0
+2020-08-14 11:24:05,783 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.13.0
+2020-08-14 11:24:05,783 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.0.0
+2020-08-14 11:24:05,783 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.0.0
+2020-08-14 11:24:05,783 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.0
+2020-08-14 11:24:05,783 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 2.0.0
+2020-08-14 11:24:05,783 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.14.0
+2020-08-14 11:24:05,783 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.1.0
+2020-08-14 11:24:06,367 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-08-14 11:24:06,369 [INFO] PinOutPanel:1367 - setPackage(STM32F407VGTx,LQFP100)
+2020-08-14 11:24:07,178 [INFO] UtilMem:74 - Before build in PCC Used Memory: 229554160 Bytes (348127232)
+2020-08-14 11:24:08,017 [INFO] SharedServices:71 - Folder for power plug-in: /home/kerraiosc/.stm32cubemx/plugins/power
+2020-08-14 11:24:08,020 [INFO] UtilMem:74 - After build in PCC Used Memory: 244234224 Bytes (348127232)
+2020-08-14 11:24:08,034 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2020-08-14 11:24:08,034 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,035 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,035 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,035 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,035 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,037 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,037 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,037 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,038 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,038 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,038 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,039 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,039 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,039 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,039 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,040 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,041 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,041 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,042 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,042 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,042 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,043 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,046 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,046 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,047 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,048 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,048 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,048 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,049 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,049 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,049 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,050 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,050 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,050 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,052 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,053 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,055 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,055 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,056 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,056 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,056 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,060 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,060 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,060 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,061 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,061 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,061 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,061 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,062 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,062 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,062 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,064 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,064 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,065 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,066 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,066 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,067 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,067 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-08-14 11:24:08,093 [INFO] Can:56 - Can Add PropertyChangeListener com.st.microxplorer.plugins.ip.can.Can@6c9df53d
+2020-08-14 11:24:08,093 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2020-08-14 11:24:08,116 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-08-14 11:24:08,125 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,127 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2020-08-14 11:24:08,223 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,225 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,226 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,227 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2020-08-14 11:24:08,227 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2020-08-14 11:24:08,228 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,240 [INFO] OpenFileManager:289 - Restore cursor
+2020-08-14 11:24:08,251 [INFO] DbMcusXml:106 - Load MCU database from /home/kerraiosc/software/st/stm32cubeide_1.0.2/plugins/com.st.stm32cube.common.mx_5.3.0.201907110903//db//mcu/families.xml
+2020-08-14 11:24:08,255 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,256 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,256 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,257 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2020-08-14 11:24:08,258 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2020-08-14 11:24:08,259 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,573 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2020-08-14 11:24:08,602 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,604 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,605 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,606 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2020-08-14 11:24:08,607 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2020-08-14 11:24:08,607 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2020-08-14 11:24:08,748 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2020-08-14 11:24:10,526 [INFO] DbMcusJson:87 - JSON generation date=Thu Jul 02 17:47:47 CEST 2020 (1593704867)
+2020-08-14 11:24:13,314 [INFO] DbMcus:193 - Found 1496 MCUs (1455 are supported by CubeMX, 1455 are visible in CubeMX)
+2020-08-14 11:24:13,314 [INFO] ApiDb:147 - User favorites file not found: /home/kerraiosc/.stm32cubemx/favorites.mcus.txt
+2020-08-14 11:24:13,314 [INFO] DbMcus:205 - Set 0 / 0 favorites MCUs
