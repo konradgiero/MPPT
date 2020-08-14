@@ -112,6 +112,9 @@ int main(void)
 
   HAL_ADC_Start_DMA(&hadc1, value, 4);
 
+  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -129,6 +132,8 @@ int main(void)
 	  else
 		  DutyCycle = 500;
 	  TIM3->CCR4 = DutyCycle;
+
+	  HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_4);
 	  HAL_Delay(500);
     /* USER CODE END WHILE */
 
