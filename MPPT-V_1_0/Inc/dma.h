@@ -30,10 +30,12 @@
 /* DMA memory to memory transfer handles -------------------------------------*/
 
 /* USER CODE BEGIN Includes */
-
+extern ADC_HandleTypeDef hadc1;
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN Private defines */
+
+void startReadingDMA(uint32_t * valueContainer);
 
 /* USER CODE END Private defines */
 

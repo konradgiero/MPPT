@@ -49,7 +49,9 @@ void MX_DMA_Init(void)
 }
 
 /* USER CODE BEGIN 2 */
-
+void startReadingDMA(uint32_t * valueContainer){
+	HAL_ADC_Start_DMA(&hadc1, valueContainer, 4);
+}
 /* USER CODE END 2 */
 
 /**

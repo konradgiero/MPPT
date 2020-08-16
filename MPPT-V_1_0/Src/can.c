@@ -120,9 +120,9 @@ void HAL_CAN_MspDeInit(CAN_HandleTypeDef* canHandle)
 /* USER CODE BEGIN 1 */
 
 /*******************************************************************************
- KONFIGURACJA FILTROW
+ FILTER CONFIGURATION
  *******************************************************************************/
-void config_filter_0(void) {
+void CANFilerConfig(void) {
 	filter_0.FilterBank = 0;
 	filter_0.FilterMode = CAN_FILTERMODE_IDMASK;
 	filter_0.FilterScale = CAN_FILTERSCALE_32BIT;
@@ -136,9 +136,9 @@ void config_filter_0(void) {
 }
 
 /*******************************************************************************
- 	 START PERYFERIUM
+ 	 PERYFERIUM INITIAZLIZATION
  *******************************************************************************/
-void can1_init() {
+void CAN1_Init() {
 	if (HAL_CAN_ConfigFilter(&hcan1, &filter_0) != HAL_OK) {
 		Error_Handler();
 	}
@@ -154,18 +154,36 @@ void can1_init() {
 }
 
 /*******************************************************************************
- KONFIGURACJA RAMEK DANYCH
+ FRAME CONFIGURATION
  *******************************************************************************/
-void cansend_SYNC() {
+void prepareFrameData(void){
+	uint32_t inputVoltage = averageArrayVoltage;
+	uint32_t inputCurrent = averageArrayCurrent;
+
+	frame_SYNC.TxData[0] = 0xFF & inputVoltage;
+	frame_SYNC.TxData[1] = 0xFF00 & inputVoltage;
+	frame_SYNC.TxData[2] = 0xFF0000 & inputVoltage;
+	frame_SYNC.TxData[3] = 0xFF000000 & inputVoltage;
+	frame_SYNC.TxData[4] = 0xFF & inputCurrent;
+	frame_SYNC.TxData[5] = 0xFF00 & inputCurrent;
+	frame_SYNC.TxData[6] = 0xFF0000 & inputCurrent;
+	frame_SYNC.TxData[7] = 0xFF000000 & inputCurrent;
+}
+
+void sendCAN() {
 	frame_SYNC.TxHeader.StdId = 0x080;
 	frame_SYNC.TxHeader.RTR = CAN_RTR_DATA;
 	frame_SYNC.TxHeader.IDE = CAN_ID_STD;
-	frame_SYNC.TxHeader.DLC = 0;
+	frame_SYNC.TxHeader.DLC = 8;
 	frame_SYNC.TxHeader.TransmitGlobalTime = DISABLE;
+
+	prepareFrameData();
 
 	if (HAL_CAN_AddTxMessage(&hcan1, &frame_SYNC.TxHeader, frame_SYNC.TxData,
 			&TxMailbox) != HAL_OK) {
 		Error_Handler();
+	} else{
+		resetYellowState();
 	}
 
 	while (HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 3) {

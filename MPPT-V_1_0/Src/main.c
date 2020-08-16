@@ -26,11 +26,9 @@
 #include "tim.h"
 #include "gpio.h"
 
-#include "utilities.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "utilities.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -62,9 +60,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint32_t ADC_Battery, ADC_Array, ADC_VBattery, ADC_VArray;
-uint32_t DutyCycle = 500;
-uint32_t value[4];
+
 /* USER CODE END 0 */
 
 /**
@@ -74,8 +70,7 @@ uint32_t value[4];
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	uint16_t raw;
-
+	isMPPTInitialised = 0;
   /* USER CODE END 1 */
   
 
@@ -102,19 +97,24 @@ int main(void)
   MX_ADC1_Init();
   MX_CAN1_Init();
   MX_TIM2_Init();
+  MX_TIM1_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
 
-  config_filter_0();
-  can1_init();
+  CANFilerConfig();
+  CAN1_Init();
 
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4); 			//MCU_PWM
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);	//MCU_PWM_EN Register
-  TIM3->CCR4 = DutyCycle;										//Duty - max value 670
 
 
-  HAL_ADC_Start_DMA(&hadc1, value, 4);
 
+  HAL_TIM_Base_Start_IT(&htim4);
+  HAL_TIM_Base_Start_IT(&htim1);
 
+  MPPTInit();
+
+  enablePWM();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -122,26 +122,11 @@ int main(void)
 
   while (1)
   {
-	  /*cansend_SYNC();
-	  ADC_Array = value[0];
-	  ADC_Battery = value[1];
-	  ADC_VArray = value[2];
-	  ADC_VBattery = value[3];
-	  if(DutyCycle < 630)
-		  DutyCycle += 10;
-	  else
-		  DutyCycle = 500;
-	  TIM3->CCR4 = DutyCycle;
-
-	  HAL_Delay(500);
+	  storeMeasurements();
+	  HAL_Delay(DELAY_BETWEEN_MEASUREMENTS);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  setGreenState();
-	  HAL_Delay(1000);
-	  resetGreenState();
-	  HAL_Delay(1000);
-	  setGreenState();
 
   }
   /* USER CODE END 3 */
@@ -191,6 +176,43 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(isMPPTInitialised){
+		if(htim->Instance == TIM1) // T = 1 s*/
+		{
+			  sendCAN();
+		}
+		if(htim->Instance == TIM4) // T = 500ms
+		{
+			checkArrayConnection();
+			//checkBatteryConnection();
+
+			if(MPPTState == MPPT_STATE_GREEN){
+				void PandOAlgorithm();
+			}
+		}
+	}
+
+}
+
+void PandOAlgorithm(void){
+	uint32_t prevPowerValue = inputPower;
+	calculateInputPower();
+	if (prevStepDirection == STEP_UP){
+		if (inputPower > prevPowerValue)
+			increseDutyCycle();
+		else
+			decreaseDutyCycle();
+
+	}
+	if(prevStepDirection == STEP_DOWN){
+		if (inputPower > prevPowerValue)
+			decreaseDutyCycle();
+		else
+			increseDutyCycle();
+	}
+
+}
 
 /* USER CODE END 4 */
 
@@ -202,7 +224,7 @@ void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
-
+	setYellowState();
   /* USER CODE END Error_Handler_Debug */
 }
 

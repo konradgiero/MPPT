@@ -25,7 +25,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "utilities.h"
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -35,9 +35,10 @@ extern CAN_HandleTypeDef hcan1;
 /* USER CODE BEGIN Private defines */
 
 CAN_FilterTypeDef	filter_0;
-void can1_init();
-void cansend_SYNC();
-void config_filter_0();
+void CAN1_Init(void);
+void sendCAN(void);
+void CANFilerConfig(void);
+void prepareFrameData(void);
 
 typedef struct
 	{
