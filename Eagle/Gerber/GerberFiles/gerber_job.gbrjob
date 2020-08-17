@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-07-25T07:48:25Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.3.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "scheme"
+        },
+        "Owner": "Jarosaw Warmbier <jaroslaw.warmbier@student.put.poznan.pl>",
+        "Size": {
+            "X": 100.000053,
+            "Y": 100.000053
+        }
+    }
+}

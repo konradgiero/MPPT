@@ -13501,3 +13501,4 @@
 2020-08-16 22:00:59,465 [INFO] BlockDiagram:1818 - stop enableDisableButtons
 2020-08-16 22:01:01,526 [INFO] BlockDiagram:1818 - stop enableDisableButtons
 2020-08-16 22:01:03,067 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2020-08-17 00:03:57,996 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SWT WebkitGDBus.java: Lost GDBus name. This should never occur
