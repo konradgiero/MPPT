@@ -175,42 +175,48 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	if(isMPPTInitialised){
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if(isMPPTInitialised)
+	{
 		if(htim->Instance == TIM1) // T = 1 s*/
 		{
 			  sendCAN();
 		}
+
 		if(htim->Instance == TIM4) // T = 500ms
 		{
 			checkArrayConnection();
 			//checkBatteryConnection();
 
-			if(MPPTState == MPPT_STATE_GREEN){
+			if(MPPTState == MPPT_STATE_GREEN)
+			{
 				void PandOAlgorithm();
 			}
 		}
 	}
-
 }
 
-void PandOAlgorithm(void){
+void PandOAlgorithm(void)
+{
 	uint32_t prevPowerValue = inputPower;
 	calculateInputPower();
-	if (prevStepDirection == STEP_UP){
+
+	if (prevStepDirection == STEP_UP)
+	{
 		if (inputPower > prevPowerValue)
 			increseDutyCycle();
 		else
 			decreaseDutyCycle();
-
 	}
-	if(prevStepDirection == STEP_DOWN){
+
+	if(prevStepDirection == STEP_DOWN)
+	{
 		if (inputPower > prevPowerValue)
 			decreaseDutyCycle();
 		else
 			increseDutyCycle();
 	}
-
 }
 
 /* USER CODE END 4 */
