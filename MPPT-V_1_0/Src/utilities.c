@@ -178,7 +178,7 @@ void calculateInputPower(void){
 	inputPower = averageArrayCurrent * averageArrayVoltage;
 }
 void setDutyCycle(uint32_t dutyCyclePerMille){
-	TIM3->CCR4 = MAX_COUNTER_VALUE*dutyCyclePerMille
+	TIM3->CCR4 = MAX_COUNTER_VALUE*dutyCyclePerMille;
 }
 
 void increseDutyCycle(void){
