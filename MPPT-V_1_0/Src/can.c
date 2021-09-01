@@ -167,8 +167,8 @@ void CAN1_Init() {
  FRAME CONFIGURATION
  *******************************************************************************/
 void prepareFrameData(void){
-	uint32_t inputVoltage = averageArrayVoltage;
-	uint32_t inputCurrent = averageArrayCurrent;
+	uint32_t inputVoltage = 0xABCD;//averageArrayVoltage;
+	uint32_t inputCurrent = 0xABCD;//averageArrayCurrent;
 
 	frame_SYNC.TxData[0] = 0xFF & inputVoltage;
 	frame_SYNC.TxData[1] = 0xFF00 & inputVoltage;
@@ -188,6 +188,33 @@ void sendCAN() {
 	frame_SYNC.TxHeader.TransmitGlobalTime = DISABLE;
 
 	prepareFrameData();
+
+	if (HAL_CAN_AddTxMessage(&hcan1, &frame_SYNC.TxHeader, frame_SYNC.TxData,
+			&TxMailbox) != HAL_OK) {
+		Error_Handler();
+	} else{
+		resetYellowState();
+	}
+
+	while (HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 3) {
+	}
+}
+
+void sendCANData(uint8_t byte0, uint8_t byte1, uint8_t byte2, uint8_t byte3, uint8_t byte4, uint8_t byte5, uint8_t byte6, uint8_t byte7) {
+	frame_SYNC.TxHeader.StdId = 0x080;
+	frame_SYNC.TxHeader.RTR = CAN_RTR_DATA;
+	frame_SYNC.TxHeader.IDE = CAN_ID_STD;
+	frame_SYNC.TxHeader.DLC = 8;
+	frame_SYNC.TxHeader.TransmitGlobalTime = DISABLE;
+
+	frame_SYNC.TxData[0] = byte0;
+	frame_SYNC.TxData[1] = byte1;
+	frame_SYNC.TxData[2] = byte2;
+	frame_SYNC.TxData[3] = byte3;
+	frame_SYNC.TxData[4] = byte4;
+	frame_SYNC.TxData[5] = byte5;
+	frame_SYNC.TxData[6] = byte6;
+	frame_SYNC.TxData[7] = byte7;
 
 	if (HAL_CAN_AddTxMessage(&hcan1, &frame_SYNC.TxHeader, frame_SYNC.TxData,
 			&TxMailbox) != HAL_OK) {

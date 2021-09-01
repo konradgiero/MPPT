@@ -40,6 +40,7 @@ void CAN1_Init(void);
 void sendCAN(void);
 void CANFilerConfig(void);
 void prepareFrameData(void);
+void sendCANData(uint8_t byte0, uint8_t byte1, uint8_t byte2, uint8_t byte3, uint8_t byte4, uint8_t byte5, uint8_t byte6, uint8_t byte7);
 
 typedef struct
 	{

@@ -119,8 +119,11 @@ int main(void)
 
   while (1)
   {
-	  storeMeasurements();
-	  HAL_Delay(DELAY_BETWEEN_MEASUREMENTS);
+	  //storeMeasurements();
+	  //HAL_Delay(DELAY_BETWEEN_MEASUREMENTS);
+	  sendCANData(0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8);
+	  HAL_Delay(1000);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
