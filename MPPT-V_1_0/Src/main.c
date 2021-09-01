@@ -119,10 +119,11 @@ int main(void)
 
   while (1)
   {
-	  //storeMeasurements();
-	  //HAL_Delay(DELAY_BETWEEN_MEASUREMENTS);
+	  storeMeasurements();
+	  HAL_Delay(DELAY_BETWEEN_MEASUREMENTS);
 	  sendCANData(0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8);
 	  HAL_Delay(1000);
+
 
     /* USER CODE END WHILE */
 
@@ -183,7 +184,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	{
 		if(htim->Instance == TIM1) // T = 1 s*/
 		{
-			  sendCAN();
+			sendCAN();
 		}
 
 		if(htim->Instance == TIM4) // T = 500ms

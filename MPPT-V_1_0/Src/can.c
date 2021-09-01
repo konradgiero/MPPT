@@ -46,7 +46,7 @@ void MX_CAN1_Init(void)
 
   /* USER CODE END CAN1_Init 1 */
   hcan1.Instance = CAN1;
-  hcan1.Init.Prescaler = 21;
+  hcan1.Init.Prescaler = 52;
   hcan1.Init.Mode = CAN_MODE_LOOPBACK;
   hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
   hcan1.Init.TimeSeg1 = CAN_BS1_13TQ;
@@ -167,9 +167,10 @@ void CAN1_Init() {
  FRAME CONFIGURATION
  *******************************************************************************/
 void prepareFrameData(void){
-	uint32_t inputVoltage = 0xABCD;//averageArrayVoltage;
-	uint32_t inputCurrent = 0xABCD;//averageArrayCurrent;
+	uint32_t inputVoltage = 0xABCDEF87;//averageArrayVoltage;
+	uint32_t inputCurrent = 0x12345678;//averageArrayCurrent;
 
+	/*Dodać przesunięcie bitowe*/
 	frame_SYNC.TxData[0] = 0xFF & inputVoltage;
 	frame_SYNC.TxData[1] = 0xFF00 & inputVoltage;
 	frame_SYNC.TxData[2] = 0xFF0000 & inputVoltage;
@@ -219,11 +220,9 @@ void sendCANData(uint8_t byte0, uint8_t byte1, uint8_t byte2, uint8_t byte3, uin
 	if (HAL_CAN_AddTxMessage(&hcan1, &frame_SYNC.TxHeader, frame_SYNC.TxData,
 			&TxMailbox) != HAL_OK) {
 		Error_Handler();
-	} else{
-		resetYellowState();
 	}
 
-	while (HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 3) {
+	while (HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 1) {
 	}
 }
 
