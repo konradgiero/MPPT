@@ -172,13 +172,13 @@ void prepareFrameData(void){
 
 	/*Dodać przesunięcie bitowe*/
 	frame_SYNC.TxData[0] = 0xFF & inputVoltage;
-	frame_SYNC.TxData[1] = 0xFF00 & inputVoltage;
-	frame_SYNC.TxData[2] = 0xFF0000 & inputVoltage;
-	frame_SYNC.TxData[3] = 0xFF000000 & inputVoltage;
+	frame_SYNC.TxData[1] = (0xFF00 & inputVoltage) >> 8;
+	frame_SYNC.TxData[2] = (0xFF0000 & inputVoltage) >> 16;
+	frame_SYNC.TxData[3] = (0xFF000000 & inputVoltage) >> 24;
 	frame_SYNC.TxData[4] = 0xFF & inputCurrent;
-	frame_SYNC.TxData[5] = 0xFF00 & inputCurrent;
-	frame_SYNC.TxData[6] = 0xFF0000 & inputCurrent;
-	frame_SYNC.TxData[7] = 0xFF000000 & inputCurrent;
+	frame_SYNC.TxData[5] = (0xFF00 & inputCurrent) >> 8;
+	frame_SYNC.TxData[6] = (0xFF0000 & inputCurrent) >> 16;
+	frame_SYNC.TxData[7] = (0xFF000000 & inputCurrent) >> 24;
 }
 
 void sendCAN() {
