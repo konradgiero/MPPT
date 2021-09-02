@@ -208,7 +208,7 @@ void PandOAlgorithm(void)
 	if (prevStepDirection == STEP_UP)
 	{
 		if (inputPower > prevPowerValue)
-			increseDutyCycle();
+			increaseDutyCycle();
 		else
 			decreaseDutyCycle();
 	}
@@ -218,7 +218,7 @@ void PandOAlgorithm(void)
 		if (inputPower > prevPowerValue)
 			decreaseDutyCycle();
 		else
-			increseDutyCycle();
+			increaseDutyCycle();
 	}
 }
 

@@ -188,7 +188,7 @@ void setDutyCycle(uint32_t dutyCyclePerMille){
 	TIM3->CCR4 = MAX_COUNTER_VALUE*dutyCyclePerMille;
 }
 
-void increseDutyCycle(void){
+void increaseDutyCycle(void){
 	uint32_t currentValue = TIM3->CCR4;
 
 	currentValue += MAX_COUNTER_VALUE*DUTY_CYCLE_STEP/1000;

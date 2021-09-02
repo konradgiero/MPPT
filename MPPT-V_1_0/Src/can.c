@@ -19,6 +19,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "can.h"
+#include "utilities.h"
 
 /* USER CODE BEGIN 0 */
 /* USER CODE BEGIN 0 */
@@ -167,10 +168,9 @@ void CAN1_Init() {
  FRAME CONFIGURATION
  *******************************************************************************/
 void prepareFrameData(void){
-	uint32_t inputVoltage = 0xABCDEF87;//averageArrayVoltage;
-	uint32_t inputCurrent = 0x12345678;//averageArrayCurrent;
+	uint32_t inputVoltage = averageArrayVoltage;
+	uint32_t inputCurrent = averageArrayCurrent;
 
-	/*Dodać przesunięcie bitowe*/
 	frame_SYNC.TxData[0] = 0xFF & inputVoltage;
 	frame_SYNC.TxData[1] = (0xFF00 & inputVoltage) >> 8;
 	frame_SYNC.TxData[2] = (0xFF0000 & inputVoltage) >> 16;
