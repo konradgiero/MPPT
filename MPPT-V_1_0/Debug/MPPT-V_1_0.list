@@ -10291,9 +10291,9 @@ void MX_CAN1_Init(void)
  8003ba4:	4b18      	ldr	r3, [pc, #96]	; (8003c08 <MX_CAN1_Init+0x68>)
  8003ba6:	4a19      	ldr	r2, [pc, #100]	; (8003c0c <MX_CAN1_Init+0x6c>)
  8003ba8:	601a      	str	r2, [r3, #0]
-  hcan1.Init.Prescaler = 52;
+  hcan1.Init.Prescaler = 60;
  8003baa:	4b17      	ldr	r3, [pc, #92]	; (8003c08 <MX_CAN1_Init+0x68>)
- 8003bac:	2234      	movs	r2, #52	; 0x34
+ 8003bac:	223c      	movs	r2, #60	; 0x3c
  8003bae:	605a      	str	r2, [r3, #4]
   hcan1.Init.Mode = CAN_MODE_LOOPBACK;
  8003bb0:	4b15      	ldr	r3, [pc, #84]	; (8003c08 <MX_CAN1_Init+0x68>)
@@ -10303,9 +10303,9 @@ void MX_CAN1_Init(void)
  8003bb8:	4b13      	ldr	r3, [pc, #76]	; (8003c08 <MX_CAN1_Init+0x68>)
  8003bba:	2200      	movs	r2, #0
  8003bbc:	60da      	str	r2, [r3, #12]
-  hcan1.Init.TimeSeg1 = CAN_BS1_13TQ;
+  hcan1.Init.TimeSeg1 = CAN_BS1_11TQ;
  8003bbe:	4b12      	ldr	r3, [pc, #72]	; (8003c08 <MX_CAN1_Init+0x68>)
- 8003bc0:	f44f 2240 	mov.w	r2, #786432	; 0xc0000
+ 8003bc0:	f44f 2220 	mov.w	r2, #655360	; 0xa0000
  8003bc4:	611a      	str	r2, [r3, #16]
   hcan1.Init.TimeSeg2 = CAN_BS2_2TQ;
  8003bc6:	4b10      	ldr	r3, [pc, #64]	; (8003c08 <MX_CAN1_Init+0x68>)
@@ -10592,7 +10592,6 @@ void prepareFrameData(void){
  8003d66:	681b      	ldr	r3, [r3, #0]
  8003d68:	603b      	str	r3, [r7, #0]
 
-	/*Dodać przesunięcie bitowe*/
 	frame_SYNC.TxData[0] = 0xFF & inputVoltage;
  8003d6a:	687b      	ldr	r3, [r7, #4]
  8003d6c:	b2da      	uxtb	r2, r3

@@ -19,9 +19,10 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "can.h"
-#include "utilities.h"
+
 
 /* USER CODE BEGIN 0 */
+#include "utilities.h"
 /* USER CODE BEGIN 0 */
 
 
@@ -47,10 +48,10 @@ void MX_CAN1_Init(void)
 
   /* USER CODE END CAN1_Init 1 */
   hcan1.Instance = CAN1;
-  hcan1.Init.Prescaler = 52;
+  hcan1.Init.Prescaler = 60;
   hcan1.Init.Mode = CAN_MODE_LOOPBACK;
   hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
-  hcan1.Init.TimeSeg1 = CAN_BS1_13TQ;
+  hcan1.Init.TimeSeg1 = CAN_BS1_11TQ;
   hcan1.Init.TimeSeg2 = CAN_BS2_2TQ;
   hcan1.Init.TimeTriggeredMode = DISABLE;
   hcan1.Init.AutoBusOff = DISABLE;
