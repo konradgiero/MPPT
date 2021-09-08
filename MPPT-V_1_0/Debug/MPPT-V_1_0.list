@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00022529  00000000  00000000  000341b8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   000110ae  00000000  00000000  000566e1  2**0
+ 17 .debug_line   0001130e  00000000  00000000  000566e1  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000d4153  00000000  00000000  0006778f  2**0
+ 18 .debug_str    000d415b  00000000  00000000  000679ef  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  0013b8e2  2**0
+ 19 .comment      00000053  00000000  00000000  0013bb4a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000038a4  00000000  00000000  0013b938  2**2
+ 20 .debug_frame  000038a4  00000000  00000000  0013bba0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -10592,7 +10592,6 @@ void prepareFrameData(void){
  8003d66:	681b      	ldr	r3, [r3, #0]
  8003d68:	603b      	str	r3, [r7, #0]
 
-	/*Dodać przesunięcie bitowe*/
 	frame_SYNC.TxData[0] = 0xFF & inputVoltage;
  8003d6a:	687b      	ldr	r3, [r7, #4]
  8003d6c:	b2da      	uxtb	r2, r3
