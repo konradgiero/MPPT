@@ -27,7 +27,7 @@
 
 #define DUTY_CYCLE_INITIALIZED 800 // 800 per mille
 #define DUTY_CYCLE_STEP 5 // step in per mille
-#define MAX_COUNTER_VALUE 839 // mixumuma value of counter
+#define MAX_COUNTER_VALUE 839 // PWM maximum value of counter
 #define STEP_UP 1
 #define STEP_DOWN 0
 
